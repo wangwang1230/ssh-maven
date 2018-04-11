@@ -24,6 +24,10 @@
   <listener>
   	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
+  <!-- log4j监听 -->
+  <listener>
+	<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+  </listener>
   
   <!-- 通过上下文参数指定spring配置文件路径 （context-param用来指定配置文件，contextConfigLocation为ContextLoaderListene类中指定配置文件的变量名） -->
   <context-param>
@@ -32,4 +36,9 @@
   	<!-- 配置多个配置文件，用逗号分隔 -->
   	<!-- <param-value>classpath:applicationContext-*.xml,classpath*:spring/applicationContext-*.xml</param-value> -->
   </context-param>
+  <!-- 配置log4j -->
+  <context-param>
+   <param-name>log4jConfigLocation</param-name>
+   <param-value>classpath:log4j.properties</param-value>
+</context-param>
 </web-app>
