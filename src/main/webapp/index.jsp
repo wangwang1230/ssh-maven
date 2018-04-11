@@ -5,7 +5,7 @@
 <html>
   <head>
     
-    <title>ssh测试</title>
+    <title>ssh测试demo</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -16,10 +16,20 @@
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-
+	<script type="text/javascript">
+		window.onload = function(){
+			alert("获取数据完毕，项目已启动！")
+		}
+	</script>
   </head>
   
   <body>
-    <s:property value="custName"/>
+  	<div>
+  		<h3>客户信息：</h3>
+  		<ul>
+  			<li><font color="blue" strong>姓名</font>：<s:property value="custName"/></li>
+  			<li><font color="blue" strong>地址</font>：<s:property value="address"/></li>
+  		</ul>
+  	</div>
   </body>
 </html>
