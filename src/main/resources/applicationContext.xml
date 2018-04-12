@@ -77,5 +77,5 @@
 	<!-- 配置action对象，action对象必须设置多例 ：scope="prototype" 。如果不设置默认单例，如果中间有报错就会一直报错，因为是单例的-->
 	<bean id="customerAction" class="cn.bimart.web.action.CustomerAction" scope="prototype">
 		<property name="customerService" ref="customerService"></property>
-	</bean>
+	</bean> 
 </beans>
